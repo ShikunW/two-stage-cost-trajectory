@@ -19,7 +19,7 @@ dat <- gen.data(n = n,
                 seed = 123,
                 constant.variance = constant.variance)
 plot.data(dat)
-param.Naive <- NaiveMethod(dat,extra.group = extra.group)
-param.stage1 <- Stage1Method(dat,extra.group = extra.group)
-param.stage2 <- Stage2Method(dat,param.stage1,extra.group = extra.group)
+param.Naive <- NaiveMethod(dat,LTS.group = LTS.group)
+param.stage1 <- Stage1Method(dat,LTS.group = LTS.group)
+param.stage2 <- Stage2Method(dat,param.stage1,LTS.group = LTS.group)
 ```
