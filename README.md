@@ -20,6 +20,6 @@ dat <- gen.data(n = n,
                 constant.variance = constant.variance)
 plot.data(dat)
 param.Naive <- NaiveMethod(dat,extra.group = extra.group)
-param.stage1 <- Stage1Method(dat,extra.group = extra.group )
-param.stage2 <- Stage2Method(dat,param.stage1,extra.group = extra.group )
+param.stage1 <- Stage1Method(dat,extra.group = extra.group)
+param.stage2 <- Stage2Method(dat,param.stage1,extra.group = extra.group)
 ```
